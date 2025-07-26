@@ -1,0 +1,15 @@
+{
+  "name": "weather-app-api",
+  "version": "1.0.0",
+  "description": "Azure Functions for Weather App",
+  "main": "index.js",
+  "engines": {
+    "node": "18"
+  },
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
