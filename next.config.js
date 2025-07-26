@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  trailingSlash: true,
+  // Only use static export for production builds
+  output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
+  trailingSlash: process.env.NODE_ENV === 'production',
   images: {
     unoptimized: true,
   },
-  distDir: 'out',
+  distDir: process.env.NODE_ENV === 'production' ? 'out' : '.next',
 };
 
 module.exports = nextConfig;

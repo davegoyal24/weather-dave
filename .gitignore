@@ -38,3 +38,7 @@ obj
 appsettings.json
 local.settings.json
 .python_packages
+
+# logs
+/tmp/
+*.log
